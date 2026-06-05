@@ -27,7 +27,6 @@ a {
     text-align: center;
 }
 
-
 body {
     font-family: var(--bs-main-font);
     scroll-behavior: smooth;
@@ -40,7 +39,6 @@ body {
 
 section {
     margin-top: 80px;
-    /* header height */
     scroll-margin-top: 80px;
 }
 
@@ -62,12 +60,184 @@ section {
     letter-spacing: -1px;
 }
 
-
 .name {
     color: var(--bs-red);
     font-weight: 700;
 }
 
+/* ===== Animations ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.fade-in-scale {
+    animation: fadeInScale 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.01) 100%);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.8rem;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+}
+
+/* ===== About Section ===== */
+.about-section {
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.01) 100%);
+}
+
+.about-text-main,
+.about-text-sub {
+    max-width: 850px;
+    line-height: 1.9;
+    color: #555;
+    animation: fadeInUp 0.8s ease;
+}
+
+.about-text-main {
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+.about-text-sub {
+    font-size: 1rem;
+    color: #666;
+}
+
+.highlight {
+    color: #ff0000;
+    font-weight: 600;
+    position: relative;
+}
+
+.highlight::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #ff0000, #ff5e5e);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .about-text-main {
+        font-size: 1rem;
+    }
+
+    .about-text-sub {
+        font-size: 0.95rem;
+    }
+}
+
+/* ===== Section Titles ===== */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(135deg, #ff0000, #ff5e5e);
+    border-radius: 2px;
+}
+
+/* ===== Custom Button ===== */
 .custom-btn {
     background: transparent;
     border: 1.5px solid #ff0000;
@@ -76,6 +246,7 @@ section {
     padding: 10px 26px;
     font-size: 1rem;
     transition: all 0.3s ease;
+    font-weight: 500;
 }
 
 .custom-btn:hover {
@@ -83,6 +254,7 @@ section {
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(255, 0, 0, 0.35);
+    border-color: transparent;
 }
 
 /* ===== Statistics Section ===== */
@@ -114,9 +286,48 @@ section {
     color: #444;
 }
 
+/* ===== Skills Section ===== */
 
-/* ===== Aesthetic Skills Section ===== */
-/* ===== Categorized Skills Section ===== */
+.skills-section {
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.01) 100%);
+}
+
+/* ===== Primary/Secondary Badge ===== */
+.primary.work {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.primary.work .highlight {
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.08) 0%, rgba(255, 0, 0, 0.04) 100%);
+    border: 1.5px solid rgba(255, 0, 0, 0.3);
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
+    position: relative;
+    display: inline-block;
+    color: #ff0000;
+}
+
+.primary.work .highlight:hover {
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.15) 0%, rgba(255, 0, 0, 0.08) 100%);
+    border-color: rgba(255, 0, 0, 0.5);
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .primary.work .highlight {
+        font-size: 0.9rem;
+        padding: 10px 22px;
+    }
+}
 
 .skills-grid {
     display: grid;
@@ -184,49 +395,32 @@ section {
     box-shadow: 0 6px 16px rgba(255, 0, 0, 0.25);
 }
 
-
-.img-fluid {
-    max-width: 350px;
-    height: 350px;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
-    object-fit: cover;
+/* ===== Projects Section ===== */
+.projects-section {
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.01) 100%);
 }
 
-@media (max-width: 768px) {
-    .img-fluid {
-        max-width: 250px;
-        height: 250px;
-        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
-        object-fit: cover;
-    }
-}
-
-/* ===== Navbar Overrides ===== */
-.navbar-brand {
-    font-size: 1.5rem;
-}
-
-/* ===== Section Spacing ===== */
-.py-5 {
-    padding-top: 6rem !important;
-    padding-bottom: 6rem !important;
-}
-
-/* ===== Card Hover Effect ===== */
-.card {
+.project-card {
     background: rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(12px);
     border-radius: 18px;
     border: 1px solid rgba(0, 0, 0, 0.05);
     transition: all 0.4s ease;
+    height: 100%;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+.project-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 50px rgba(255, 0, 0, 0.2);
+    border-color: rgba(255, 0, 0, 0.4);
 }
 
-.card-title {
+.project-icon {
+    font-size: 3rem;
+    color: #ff0000;
+    opacity: 0.9;
+    
+}.card-title {
     color: #ff0000;
     font-weight: 600;
 }
@@ -264,7 +458,82 @@ section {
     font-size: 0.95rem;
 }
 
+/* ===== Testimonials Section ===== */
+.testimonials-section {
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.01) 100%);
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.35s ease;
+    height: 100%;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(255, 0, 0, 0.1);
+}
+
+.testimonial-stars {
+    color: #ffc107;
+    font-size: 1.1rem;
+}
+
+.testimonial-text {
+    color: #555;
+    font-style: italic;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.testimonial-author {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-top: 15px;
+}
+
+/* ===== Image Styling ===== */
+
+.img-fluid {
+    max-width: 350px;
+    height: 350px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .img-fluid {
+        max-width: 250px;
+        height: 250px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+    }
+}
+
+/* ===== Navbar Overrides ===== */
+.navbar-brand {
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+/* ===== Section Spacing ===== */
+.py-5 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
 /* ===== Contact Icons Section ===== */
+
+.contact-section {
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.01) 0%, rgba(0, 0, 0, 0.01) 100%);
+}
 
 .contact-icons {
     margin-top: 20px;
@@ -279,6 +548,7 @@ section {
     color: #ff0000;
     font-size: 0.95rem;
     transition: all 0.3s ease;
+    box-shadow: none;
 }
 
 .contact-link i {
@@ -290,21 +560,81 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.8);
+    background: transparent;
     backdrop-filter: blur(8px);
     transition: all 0.3s ease;
+    box-shadow: none;
 }
 
 .contact-link:hover i {
     background: #ff0000;
     color: #ffffff;
     transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(255, 0, 0, 0.3);
+    box-shadow: none;
+}
+
+.contact-link:hover {
+    color: #ff0000;
+    box-shadow: none;
+}
+
+/* ===== Back to Top Button ===== */
+.back-to-top {
+    position: fixed;
+    bottom: -50px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #ff0000, #ff5e5e);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+    z-index: 999;
+}
+
+.back-to-top.show {
+    bottom: 30px;
+}
+
+.back-to-top:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.4);
+}
+
+.back-to-top:active {
+    transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        right: 15px;
+        font-size: 1.1rem;
+    }
+
+    .back-to-top.show {
+        bottom: 15px;
+    }
+}
+
+.contact-link:hover {
+    color: #ff0000;
+    transform: translateY(-5px);
+    box-shadow: none;
 }
 
 .contact-link span {
     font-weight: 500;
 }
+
 .contact-link:hover span {
     text-decoration: underline;
 }

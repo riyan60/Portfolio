@@ -50,10 +50,52 @@ function startCounters() {
 // Trigger when section is visible
 window.addEventListener('scroll', () => {
     const statsSection = document.getElementById('stats');
-    const sectionTop = statsSection.getBoundingClientRect().top;
+    if (statsSection) {
+        const sectionTop = statsSection.getBoundingClientRect().top;
 
-    if (sectionTop < window.innerHeight && !statsStarted) {
-        startCounters();
-        statsStarted = true;
+        if (sectionTop < window.innerHeight && !statsStarted) {
+            startCounters();
+            statsStarted = true;
+        }
     }
 });
+
+// ===== Scroll Animation for Elements =====
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+// Observe all fade-in and scale elements
+document.querySelectorAll('.fade-in-up, .fade-in-scale').forEach(element => {
+    observer.observe(element);
+});
+
+// ===== Back to Top Button =====
+const backToTopButton = document.getElementById('backToTop');
+
+if (backToTopButton) {
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}

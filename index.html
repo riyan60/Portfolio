@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Riyan Lobo",
+ "url": "https://riyanlobo.in",
+ "image": "https://riyanlobo.in/riyan.jpg",
+ "description": "Full Stack Developer specializing in HTML, CSS, JavaScript, PHP, MySQL and responsive website development. View portfolio projects and contact details.",
+ "email": "work.riyan6@gmail.com",
+ "sameAs": [
+   "https://github.com/riyan60",
+   "https://linkedin.com/in/riyan60",
+   "https://instagram.com/x_riyan.7_x"
+ ],
+ "jobTitle": "Full Stack Developer"
+}
+</script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +28,16 @@
         content="Riyan Lobo is a Full Stack Web Developer specializing in HTML, CSS, JavaScript, PHP, MySQL and responsive website development. View portfolio projects and contact details.">
 
     <meta name="keywords"
-        content="Riyan Lobo, Riyan, Web Developer Goa, Full Stack Developer India, Portfolio Riyan Lobo">
+        content="Riyan Lobo, Riyan Lobo Goa, Website Development Goa, software development, Riyan, Web Developer Goa, Full Stack Developer India, Portfolio Riyan Lobo">
 
     <meta name="author" content="Riyan Lobo">
 
-    <meta property="og:title" content="Riyan Lobo | Web Developer Portfolio">
+    <meta property="og:title" content="Riyan Lobo | Full-Stack Developer Portfolio">
     <meta property="og:description" content="Portfolio of Riyan Lobo – Full Stack Developer">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://riyanlobo.in">
+    <meta property="og:image" content="https://riyanlobo.in/riyan.jpg">
+
     <link rel="icon" href="fevicon.webp" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -30,7 +51,7 @@
     <!-- ===== Header / Navbar ===== -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Riyan <span class="name">Lobo</span></a>
+            <a class="navbar-brand fw-bold" href="#">Portfolio <span class="name">Website</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -58,35 +79,53 @@
     </nav>
 
     <!-- ===== Home Section ===== -->
-    <section id="home" class="d-flex align-items-center">
+    <section id="home" class="d-flex align-items-center hero-section">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6 text-center">
+                <div class="col-md-6 text-center fade-in-up">
                     <img src="riyan.jpg" class="riyan-image img-fluid rounded-circle mb-4 mb-md-0"
-                        alt="Profile Picture">
+                        alt="Riyan Lobo Full Stack Developer">
                 </div>
-                <div class="col-md-6 text-center text-md-start">
-                    <h1 class="display-4 fw-bold">Hi, I'm <span class="name">Riyan Lobo</span></h1>
-                    <h2 class="h3 mb-4">Full-Stack Developer</h2>
-                    <p class="lead mb-4">I build responsive, user-friendly websites and web apps using modern web
-                        technologies.</p>
-                    <a href="#contact" class="btn custom-btn btn-lg px-4">Contact Me</a>
-                    <a href="CV Resume.pdf" target="_blank" class="btn custom-btn btn-lg px-4">CV</a>
+                <div class="col-md-6 text-center text-md-start fade-in-up" style="animation-delay: 0.2s;">
+                    <h1 class="display-4 fw-bold hero-title">Hi, I'm <span class="name">Riyan Lobo</span></h1>
+                    <h2 class="h3 mb-4 hero-subtitle">Full-Stack Developer</h2>
+                    <p class="lead mb-4 hero-description">Aspiring Full-Stack Developer with a passion for technology,
+                        software development, and creating impactful digital solutions. Skilled in modern web
+                        technologies and committed to continuous learning and professional growth.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-md-start">
+                        <a href="https://github.com/riyan60/" target="_blank" class="btn custom-btn btn-sm">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="Riyan-Lobo-CV.pdf" download="Riyan-Lobo-CV.pdf" target="_blank" class="btn custom-btn btn-lg px-4">Download CV</a>
+                        <a href="#contact" class="btn custom-btn btn-lg px-4">Contact Me</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ===== About Section ===== -->
-    <section id="about" class="py-5">
+    <section id="about" class="py-5 about-section">
         <div class="container">
-            <h2 class="text-center mb-4 name">About Me</h2>
-            <p class="lead text-center mx-auto" style="max-width: 800px;">
-                I'm a passionate Web Developer who loves turning ideas into functional and visually appealing websites.
-                I enjoy crafting digital experiences that combine creativity, logic, and clean code.
-                I focus on writing maintainable, efficient, and scalable solutions while continuously learning
-                new technologies to improve my craft.
-            </p>
+            <h2 class="text-center mb-5 name section-title">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto fade-in-up">
+                    <p class="lead text-center mx-auto mb-4 about-text-main">
+                        I'm a passionate <span class="highlight">Full-Stack Developer</span> focused on building modern,
+                        responsive, and user-friendly digital experiences.
+                        I enjoy transforming creative ideas into powerful web applications that combine clean design,
+                        smooth functionality, and efficient code.
+                    </p>
+
+                    <p class="text-center mx-auto about-text-sub">
+                        With a strong foundation in both front-end and back-end development, I create scalable solutions
+                        that deliver performance and great user experience.
+                        I'm constantly exploring new technologies, improving my skills, and pushing myself to craft
+                        products that are visually appealing, functional, and impactful.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -99,22 +138,22 @@
 
                 <div class="col-6 col-md-3">
                     <div class="stat-card text-center">
-                        <h3 class="stat-number" data-target="25">0</h3>
+                        <h3 class="stat-number" data-target="1">0</h3>
                         <p class="stat-label">Happy Clients</p>
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3">
                     <div class="stat-card text-center">
-                        <h3 class="stat-number" data-target="80">0</h3>
+                        <h3 class="stat-number" data-target="3">0</h3>
                         <p class="stat-label">Projects Completed</p>
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3">
                     <div class="stat-card text-center">
-                        <h3 class="stat-number" data-target="2">0</h3>
-                        <p class="stat-label">Years Experience</p>
+                        <h3 class="stat-number" data-target="1">0</h3>
+                        <p class="stat-label">Year Experience</p>
                     </div>
                 </div>
 
@@ -131,14 +170,17 @@
 
 
     <!-- ===== Skills Section ===== -->
-    <section id="skills" class="py-5">
+    <section id="skills" class="py-5 skills-section">
         <div class="container">
-            <h2 class="text-center mb-5 name">Skills</h2>
+            <h2 class="text-center mb-5 name section-title">Skills</h2>
+
+            <div class="primary work"><span class="highlight">Primary: Web Development | Secondary: App
+                    Development</span></div>
 
             <div class="skills-grid">
 
                 <!-- Languages -->
-                <div class="skills-card">
+                <div class="skills-card fade-in-scale">
                     <h4 class="skills-title">Languages</h4>
                     <div class="skills-pills">
                         <span class="skill-pill">HTML</span>
@@ -148,27 +190,31 @@
                         <span class="skill-pill">Python</span>
                         <span class="skill-pill">C</span>
                         <span class="skill-pill">PHP</span>
+                        <span class="skill-pill">Dart</span>
+                        <span class="skill-pill">SQL</span>
                     </div>
                 </div>
 
                 <!-- Frameworks -->
-                <div class="skills-card">
+                <div class="skills-card fade-in-scale" style="animation-delay: 0.1s;">
                     <h4 class="skills-title">Frameworks</h4>
                     <div class="skills-pills">
                         <span class="skill-pill">Bootstrap</span>
+                        <span class="skill-pill">Flutter</span>
                     </div>
                 </div>
 
                 <!-- Databases -->
-                <div class="skills-card">
+                <div class="skills-card fade-in-scale" style="animation-delay: 0.2s;">
                     <h4 class="skills-title">Databases</h4>
                     <div class="skills-pills">
                         <span class="skill-pill">MySQL</span>
+                        <span class="skill-pill">Firebase</span>
                     </div>
                 </div>
 
                 <!-- Other Technologies -->
-                <div class="skills-card">
+                <div class="skills-card fade-in-scale" style="animation-delay: 0.3s;">
                     <h4 class="skills-title">Other Technologies</h4>
                     <div class="skills-pills">
                         <span class="skill-pill">Git</span>
@@ -182,18 +228,49 @@
     </section>
 
     <!-- ===== Projects Section ===== -->
-    <section id="projects" class="py-5">
+    <section id="projects" class="py-5 projects-section">
         <div class="container">
-            <h2 class="text-center mb-4 name">Projects</h2>
+            <h2 class="text-center mb-5 name section-title">Projects</h2>
             <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <!-- <img src="doctor-patient.png" class="card-img-top" alt="Doctor Patient Project"> -->
+                <div class="col-md-6 col-lg-4 mb-4 fade-in-scale">
+                    <div class="card h-100 project-card featured-project">
+                        <div class="card-body d-flex flex-column text-center">
+                            <div class="project-icon mb-3">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h5 class="card-title py-2">QuickFix - The Repairman Finder Application</h5>
 
-                        <div class="card-body text-center">
+                            <p class="card-text flex-grow-1">
+                                Mobile and web platform for connecting users with service professionals for quick home
+                                repairs and maintenance solutions.
+                            </p>
+
+                            <p class="text-muted small">
+                                Flutter • Node.js • Firebase
+                            </p>
+
+                            <div class="d-flex justify-content-center gap-2 mt-3 flex-wrap">
+                                <a href="https://quickfix.riyanlobo.in" target="_blank" class="btn custom-btn btn-sm">
+                                    <i class="fas fa-globe"></i> Demo
+                                </a>
+                                <a href="https://github.com/riyan60/FinalYearProject-QuickFix" target="_blank"
+                                    class="btn custom-btn btn-sm">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4 fade-in-scale" style="animation-delay: 0.1s;">
+                    <div class="card h-100 project-card">
+                        <div class="card-body d-flex flex-column text-center">
+                            <div class="project-icon mb-3">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
                             <h5 class="card-title py-2">Doctor–Patient Management System</h5>
 
-                            <p class="card-text">
+                            <p class="card-text flex-grow-1">
                                 Web application for managing patients, appointments, and medical records.
                             </p>
 
@@ -202,52 +279,123 @@
                             </p>
 
                             <div class="d-flex justify-content-center gap-2 mt-3">
-                                <!-- <a href="#" class="btn custom-btn btn-sm">Live</a> -->
                                 <a href="https://github.com/riyan60/Patient-Doctor-Management-System" target="_blank"
                                     class="btn custom-btn btn-sm">
-                                    GitHub
+                                    <i class="fab fa-github"></i> GitHub
                                 </a>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
-                <!-- <div class="col-md-6 col-lg-4 mb-4">
-                    project card here
-                </div> -->
-
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <a href="https://github.com/riyan60/mini-projects" target="_blank" class="text-decoration-none">
-                        <div class="card h-100 mini-project-card text-center">
-                            <div class="card-body d-flex flex-column justify-content-center">
-                                <h5 class="card-title">More Projects</h5>
-                                <p class="card-text mt-2">
+                <div class="col-md-10 col-lg-10 mb-4 fade-in-scale" style="animation-delay: 0.1s;">
+                    <a href="https://github.com/riyan60/mini-projects" target="_blank"
+                        class="text-decoration-none h-75">
+                        <div class="card h-100 mini-project-card">
+                            <div
+                                class="card-body d-flex flex-row justify-content-center align-items-center text-center">
+                                <div class="project-icon mx-2 mx-2">
+                                    <i class="fas fa-cube"></i>
+                                </div>
+                                <h5 class="card-title mx-2">More Projects</h5>
+                                <p class="card-text mx-5">
                                     Explore my collection of mini projects, practice apps,
                                     and experimental work on GitHub.
                                 </p>
-                                <span class="mini-project-link mt-3">
+                                <span class="mini-project-link mx-3">
                                     View on GitHub →
                                 </span>
                             </div>
                         </div>
                     </a>
                 </div>
-
-
             </div>
         </div>
     </section>
 
-    <!-- ===== Contact Section ===== -->
-    <section id="contact" class="py-5">
+    <!-- ===== Testimonials Section ===== -->
+    <!-- <section id="testimonials" class="py-5 testimonials-section">
         <div class="container">
-            <h2 class="text-center mb-4 name">Contact</h2>
-            <p class="text-center mb-4">
+            <h2 class="text-center mb-5 name section-title">What People Say</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-4 fade-in-scale">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text mb-3">
+                            "Professional developer with excellent attention to detail. Delivered the project on time
+                            with great communication."
+                        </p>
+                        <div class="testimonial-author">
+                            <p class="mb-0 fw-600">Client A</p>
+                            <p class="text-muted small mb-0">Web Development Project</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4 fade-in-scale" style="animation-delay: 0.1s;">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text mb-3">
+                            "Great communication and problem-solving skills. The website is fast, responsive, and looks
+                            amazing on all devices."
+                        </p>
+                        <div class="testimonial-author">
+                            <p class="mb-0 fw-600">Client B</p>
+                            <p class="text-muted small mb-0">E-commerce Platform</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4 fade-in-scale" style="animation-delay: 0.2s;">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text mb-3">
+                            "Highly skilled and very responsive to feedback. Transformed our vision into a fully
+                            functional web application."
+                        </p>
+                        <div class="testimonial-author">
+                            <p class="mb-0 fw-600">Client C</p>
+                            <p class="text-muted small mb-0">Custom Web App</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ===== Contact Section ===== -->
+    <section id="contact" class="py-5 contact-section">
+        <div class="container">
+            <h2 class="text-center mb-2 name section-title">Contact</h2>
+            <p class="text-center mb-5 fade-in-up">
                 Feel free to reach out to me through any of the platforms below
             </p>
 
-            <div class="contact-icons d-flex justify-content-center gap-4 flex-wrap">
+            <div class="contact-icons d-flex justify-content-center gap-4 flex-wrap" style="animation-delay: 0.2s;">
+
+                <a href="tel:+918007194157" class="contact-link" aria-label="Call">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Call</span>
+                </a>
+
                 <a href="mailto:work.riyan6@gmail.com" class="contact-link" aria-label="Email">
                     <i class="fa-solid fa-envelope"></i>
                     <span>Email</span>
@@ -277,11 +425,17 @@
     </section>
 
     <!-- ===== Footer ===== -->
-    <footer class="bg-dark text-center py-3">
+    <footer class="bg-dark text-center py-4">
         <div class="container">
-            <p class="mb-0 text-white">© 2025 Riyan Lobo. All Rights Reserved.</p>
+            <p class="mb-2 text-white">Designed & Developed by Riyan Lobo</p>
+            <p class="mb-2 text-white">© 2025 Riyan Lobo. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <!-- ===== Back to Top Button ===== -->
+    <button id="backToTop" class="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
