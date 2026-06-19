@@ -1,447 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Person",
- "name": "Riyan Lobo",
- "url": "https://riyanlobo.in",
- "image": "https://riyanlobo.in/riyan.jpg",
- "description": "Full Stack Developer specializing in HTML, CSS, JavaScript, PHP, MySQL and responsive website development. View portfolio projects and contact details.",
- "email": "work.riyan6@gmail.com",
- "sameAs": [
-   "https://github.com/riyan60",
-   "https://linkedin.com/in/riyan60",
-   "https://instagram.com/x_riyan.7_x"
- ],
- "jobTitle": "Full Stack Developer"
-}
-</script>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riyan Lobo | Full Stack Developer | Portfolio</title>
-
-    <meta name="description"
-        content="Riyan Lobo is a Full Stack Web Developer specializing in HTML, CSS, JavaScript, PHP, MySQL and responsive website development. View portfolio projects and contact details.">
-
-    <meta name="keywords"
-        content="Riyan Lobo, Riyan Lobo Goa, Website Development Goa, software development, Riyan, Web Developer Goa, Full Stack Developer India, Portfolio Riyan Lobo">
-
+    <meta name="description" content="Riyan Lobo is a Full Stack Web Developer specializing in HTML, CSS, JavaScript, PHP, MySQL and responsive website development. View portfolio projects and contact details.">
+    <meta name="keywords" content="Riyan Lobo, Riyan Lobo Goa, Website Development Goa, software development, Web Developer Goa, Full Stack Developer India">
     <meta name="author" content="Riyan Lobo">
-
     <meta property="og:title" content="Riyan Lobo | Full-Stack Developer Portfolio">
     <meta property="og:description" content="Portfolio of Riyan Lobo – Full Stack Developer">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://riyanlobo.in">
     <meta property="og:image" content="https://riyanlobo.in/riyan.jpg">
-
-    <link rel="icon" href="fevicon.webp" type="image/x-icon">
+    <link rel="icon" href="fevicon.webp" type="image/webp">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
-
-
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Riyan Lobo",
+        "url": "https://riyanlobo.in",
+        "image": "https://riyanlobo.in/riyan.jpg",
+        "description": "Full Stack Developer specializing in responsive website and application development.",
+        "email": "work.riyan6@gmail.com",
+        "sameAs": [
+            "https://github.com/riyan60",
+            "https://linkedin.com/in/riyan60",
+            "https://instagram.com/x_riyan.7_x"
+        ],
+        "jobTitle": "Full Stack Developer"
+    }
+    </script>
 </head>
-
-<body class="text-dark">
-    <!-- ===== Header / Navbar ===== -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<body>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" aria-label="Main navigation">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">Portfolio <span class="name">Website</span></a>
+            <a class="navbar-brand" href="#home" aria-label="Riyan Lobo home">
+                <span class="brand-mark"><img src="logo.webp" alt=""></span>
+                <span class="brand-copy">Riyan Lobo<small>Full-stack developer</small></span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- ===== Home Section ===== -->
-    <section id="home" class="d-flex align-items-center hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center fade-in-up">
-                    <img src="riyan.jpg" class="riyan-image img-fluid rounded-circle mb-4 mb-md-0"
-                        alt="Riyan Lobo Full Stack Developer">
-                </div>
-                <div class="col-md-6 text-center text-md-start fade-in-up" style="animation-delay: 0.2s;">
-                    <h1 class="display-4 fw-bold hero-title">Hi, I'm <span class="name">Riyan Lobo</span></h1>
-                    <h2 class="h3 mb-4 hero-subtitle">Full-Stack Developer</h2>
-                    <p class="lead mb-4 hero-description">Aspiring Full-Stack Developer with a passion for technology,
-                        software development, and creating impactful digital solutions. Skilled in modern web
-                        technologies and committed to continuous learning and professional growth.
-                    </p>
-                    <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-md-start">
-                        <a href="https://github.com/riyan60/" target="_blank" class="btn custom-btn btn-sm">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        <a href="Riyan-Lobo-CV.pdf" download="Riyan-Lobo-CV.pdf" target="_blank" class="btn custom-btn btn-lg px-4">Download CV</a>
-                        <a href="#contact" class="btn custom-btn btn-lg px-4">Contact Me</a>
+    <main>
+        <section id="home" class="hero-section d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-7 order-2 order-lg-1 fade-in-up">
+                        <div class="availability-pill"><span></span> Open to opportunities</div>
+                        <p class="hero-kicker">Based in Goa, India · Building for the web</p>
+                        <h1 class="hero-title">I turn ideas into <span>useful digital products.</span></h1>
+                        <p class="hero-description">
+                            I’m Riyan Lobo, a full-stack developer focused on responsive interfaces, dependable
+                            backends, and thoughtful experiences that make technology feel simple.
+                        </p>
+                        <div class="hero-actions d-flex gap-3 flex-wrap">
+                            <a href="#projects" class="btn custom-btn custom-btn-primary">
+                                View my work <i class="fa-solid fa-arrow-down"></i>
+                            </a>
+                            <a href="Riyan-Lobo-CV.pdf" download class="btn custom-btn">
+                                Download CV <i class="fa-solid fa-download"></i>
+                            </a>
+                        </div>
+                        <div class="hero-meta">
+                            <div><strong>Full-stack</strong><span>Web development</span></div>
+                            <div><strong>Mobile</strong><span>Flutter applications</span></div>
+                            <div><strong>Always</strong><span>Learning & shipping</span></div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== About Section ===== -->
-    <section id="about" class="py-5 about-section">
-        <div class="container">
-            <h2 class="text-center mb-5 name section-title">About Me</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-8 mx-auto fade-in-up">
-                    <p class="lead text-center mx-auto mb-4 about-text-main">
-                        I'm a passionate <span class="highlight">Full-Stack Developer</span> focused on building modern,
-                        responsive, and user-friendly digital experiences.
-                        I enjoy transforming creative ideas into powerful web applications that combine clean design,
-                        smooth functionality, and efficient code.
-                    </p>
-
-                    <p class="text-center mx-auto about-text-sub">
-                        With a strong foundation in both front-end and back-end development, I create scalable solutions
-                        that deliver performance and great user experience.
-                        I'm constantly exploring new technologies, improving my skills, and pushing myself to craft
-                        products that are visually appealing, functional, and impactful.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== Statistics Section ===== -->
-    <!-- <section id="stats" class="pb-5">
-        <div class="container">
-            <h2 class="text-center mb-5 name">My Stats</h2>
-
-            <div class="row justify-content-center g-4">
-
-                <div class="col-6 col-md-3">
-                    <div class="stat-card text-center">
-                        <h3 class="stat-number" data-target="1">0</h3>
-                        <p class="stat-label">Happy Clients</p>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-3">
-                    <div class="stat-card text-center">
-                        <h3 class="stat-number" data-target="3">0</h3>
-                        <p class="stat-label">Projects Completed</p>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-3">
-                    <div class="stat-card text-center">
-                        <h3 class="stat-number" data-target="1">0</h3>
-                        <p class="stat-label">Year Experience</p>
-                    </div>
-                </div>
-
-                <div class="col-6 col-md-3">
-                    <div class="stat-card text-center">
-                        <h3 class="stat-number" data-target="10">0</h3>
-                        <p class="stat-label">Technologies Used</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-
-
-    <!-- ===== Skills Section ===== -->
-    <section id="skills" class="py-5 skills-section">
-        <div class="container">
-            <h2 class="text-center mb-5 name section-title">Skills</h2>
-
-            <div class="primary work"><span class="highlight">Primary: Web Development | Secondary: App
-                    Development</span></div>
-
-            <div class="skills-grid">
-
-                <!-- Languages -->
-                <div class="skills-card fade-in-scale">
-                    <h4 class="skills-title">Languages</h4>
-                    <div class="skills-pills">
-                        <span class="skill-pill">HTML</span>
-                        <span class="skill-pill">CSS</span>
-                        <span class="skill-pill">JavaScript</span>
-                        <span class="skill-pill">Java</span>
-                        <span class="skill-pill">Python</span>
-                        <span class="skill-pill">C</span>
-                        <span class="skill-pill">PHP</span>
-                        <span class="skill-pill">Dart</span>
-                        <span class="skill-pill">SQL</span>
-                    </div>
-                </div>
-
-                <!-- Frameworks -->
-                <div class="skills-card fade-in-scale" style="animation-delay: 0.1s;">
-                    <h4 class="skills-title">Frameworks</h4>
-                    <div class="skills-pills">
-                        <span class="skill-pill">Bootstrap</span>
-                        <span class="skill-pill">Flutter</span>
-                    </div>
-                </div>
-
-                <!-- Databases -->
-                <div class="skills-card fade-in-scale" style="animation-delay: 0.2s;">
-                    <h4 class="skills-title">Databases</h4>
-                    <div class="skills-pills">
-                        <span class="skill-pill">MySQL</span>
-                        <span class="skill-pill">Firebase</span>
-                    </div>
-                </div>
-
-                <!-- Other Technologies -->
-                <div class="skills-card fade-in-scale" style="animation-delay: 0.3s;">
-                    <h4 class="skills-title">Other Technologies</h4>
-                    <div class="skills-pills">
-                        <span class="skill-pill">Git</span>
-                        <span class="skill-pill">GitHub</span>
-                        <span class="skill-pill">Responsive Design</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== Projects Section ===== -->
-    <section id="projects" class="py-5 projects-section">
-        <div class="container">
-            <h2 class="text-center mb-5 name section-title">Projects</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4 mb-4 fade-in-scale">
-                    <div class="card h-100 project-card featured-project">
-                        <div class="card-body d-flex flex-column text-center">
-                            <div class="project-icon mb-3">
-                                <i class="fas fa-tools"></i>
-                            </div>
-                            <h5 class="card-title py-2">QuickFix - The Repairman Finder Application</h5>
-
-                            <p class="card-text flex-grow-1">
-                                Mobile and web platform for connecting users with service professionals for quick home
-                                repairs and maintenance solutions.
-                            </p>
-
-                            <p class="text-muted small">
-                                Flutter • Node.js • Firebase
-                            </p>
-
-                            <div class="d-flex justify-content-center gap-2 mt-3 flex-wrap">
-                                <a href="https://quickfix.riyanlobo.in" target="_blank" class="btn custom-btn btn-sm">
-                                    <i class="fas fa-globe"></i> Demo
-                                </a>
-                                <a href="https://github.com/riyan60/FinalYearProject-QuickFix" target="_blank"
-                                    class="btn custom-btn btn-sm">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                            </div>
+                    <div class="col-lg-5 order-1 order-lg-2 fade-in-up" style="transition-delay: .15s">
+                        <div class="portrait-wrap">
+                            <div class="portrait-label"><span>01</span> Developer portrait</div>
+                            <img src="riyan.jpg" class="riyan-image" alt="Portrait of Riyan Lobo, Full Stack Developer">
+                            <a href="https://github.com/riyan60/" target="_blank" rel="noopener noreferrer"
+                                class="portrait-badge" aria-label="Visit Riyan's GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>Explore my code<small>github.com/riyan60</small></span>
+                            </a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="col-md-6 col-lg-4 mb-4 fade-in-scale" style="animation-delay: 0.1s;">
-                    <div class="card h-100 project-card">
-                        <div class="card-body d-flex flex-column text-center">
-                            <div class="project-icon mb-3">
-                                <i class="fas fa-stethoscope"></i>
-                            </div>
-                            <h5 class="card-title py-2">Doctor–Patient Management System</h5>
+        <div class="tech-marquee" aria-label="Technologies I work with">
+            <div class="marquee-track">
+                <div class="marquee-group">
+                    <span>Responsive Design</span><i></i>JavaScript</span><i></i><span>Flutter</span><i></i>Node.js<i></i>java<i></i><span>Python</span><i></i><span>PHP</span><i></i><span>Firebase</span><i></i><span>MySQL</span><i></i><span>Deployment</span><i></i>
+                </div>
+                <div class="marquee-group" aria-hidden="true">
+                    <span>Responsive Design</span><i></i>JavaScript</span><i></i><span>Flutter</span><i></i>Node.js<i></i>java<i></i><span>Python</span><i></i><span>PHP</span><i></i><span>Firebase</span><i></i><span>MySQL</span><i></i><span>Deployment</span><i></i>
+                </div>
+            </div>
+        </div>
 
-                            <p class="card-text flex-grow-1">
-                                Web application for managing patients, appointments, and medical records.
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-heading fade-in-up">
+                    <p class="section-kicker">A little context</p>
+                    <h2 class="section-title">About me</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 mx-auto fade-in-up">
+                        <div class="about-panel">
+                            <p class="about-text-main">
+                                I’m a <span class="highlight">full-stack developer</span> who enjoys taking a product
+                                from a rough idea to a polished, working experience.
                             </p>
-
-                            <p class="text-muted small">
-                                HTML • CSS • JavaScript • PHP • MySQL
+                            <p class="about-text-sub">
+                                My work blends clean interface design with practical engineering. Whether I’m shaping
+                                a responsive front end, connecting a database, or building a mobile workflow, I care
+                                about the details that make a product clear, fast, and pleasant to use.
                             </p>
-
-                            <div class="d-flex justify-content-center gap-2 mt-3">
-                                <a href="https://github.com/riyan60/HealthConnect-PatientDoctorManagementSystem" target="_blank"
-                                    class="btn custom-btn btn-sm">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                                <a href="https://projects.riyanlobo.in/healthconnect" target="_blank"
-                                    class="btn custom-btn btn-sm">
-                                     More Details
-                                </a>
+                            <div class="about-note">
+                                <i class="fa-solid fa-code"></i> Design-minded. Detail-oriented. Curious by default.
                             </div>
+                        </div>
+                        <div class="about-stats">
+                            <div><strong>2+</strong><span>Full-scale projects</span></div>
+                            <div><strong>10+</strong><span>Technologies used</span></div>
+                            <div><strong>100%</strong><span>Responsive by default</span></div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="col-md-10 col-lg-10 mb-4 fade-in-scale" style="animation-delay: 0.1s;">
-                    <a href="https://github.com/riyan60/mini-projects" target="_blank"
-                        class="text-decoration-none h-75">
-                        <div class="card h-100 mini-project-card">
-                            <div
-                                class="card-body d-flex flex-row justify-content-center align-items-center text-center">
-                                <div class="project-icon mx-2 mx-2">
-                                    <i class="fas fa-cube"></i>
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-heading fade-in-up">
+                    <p class="section-kicker">My toolkit</p>
+                    <h2 class="section-title">Skills & technologies</h2>
+                    <p class="section-intro">The tools I use to move from interface to infrastructure.</p>
+                </div>
+                <div class="skills-grid">
+                    <article class="skills-card fade-in-scale">
+                        <div class="skill-card-head"><span>01</span><i class="fa-solid fa-code"></i></div>
+                        <h3 class="skills-title">Languages</h3>
+                        <div class="skills-pills">
+                            <span class="skill-pill">HTML</span><span class="skill-pill">CSS</span>
+                            <span class="skill-pill">JavaScript</span><span class="skill-pill">Java</span>
+                            <span class="skill-pill">Python</span><span class="skill-pill">C</span>
+                            <span class="skill-pill">PHP</span><span class="skill-pill">Dart</span>
+                            <span class="skill-pill">SQL</span>
+                        </div>
+                    </article>
+                    <article class="skills-card fade-in-scale" style="transition-delay: .08s">
+                        <div class="skill-card-head"><span>02</span><i class="fa-solid fa-layer-group"></i></div>
+                        <h3 class="skills-title">Frameworks</h3>
+                        <div class="skills-pills">
+                            <span class="skill-pill">Bootstrap</span><span class="skill-pill">Flutter</span>
+                        </div>
+                    </article>
+                    <article class="skills-card fade-in-scale" style="transition-delay: .12s">
+                        <div class="skill-card-head"><span>03</span><i class="fa-solid fa-database"></i></div>
+                        <h3 class="skills-title">Databases</h3>
+                        <div class="skills-pills">
+                            <span class="skill-pill">MySQL</span><span class="skill-pill">Firebase</span>
+                        </div>
+                    </article>
+                    <article class="skills-card fade-in-scale" style="transition-delay: .16s">
+                        <div class="skill-card-head"><span>04</span><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3 class="skills-title">Workflow</h3>
+                        <div class="skills-pills">
+                            <span class="skill-pill">Git</span><span class="skill-pill">GitHub</span>
+                            <span class="skill-pill">Responsive Design</span><span class="skill-pill">Deployment</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-heading fade-in-up">
+                    <p class="section-kicker">Selected work</p>
+                    <h2 class="section-title">Projects with purpose</h2>
+                    <p class="section-intro">A few things I’ve designed, built, and learned from.</p>
+                </div>
+                <div class="row justify-content-center g-4">
+                    <div class="col-md-6 fade-in-scale">
+                        <article class="card h-100 project-card">
+                            <div class="project-visual project-visual-quickfix">
+                                <span class="project-number">01</span>
+                                <span class="project-status">Featured project</span>
+                                <div class="app-mockup phone-mockup" aria-hidden="true">
+                                    <div class="phone-speaker"></div>
+                                    <div class="phone-screen">
+                                        <div class="mock-top"><b>QuickFix</b><span><i></i><i></i></span></div>
+                                        <p>What do you need fixed?</p>
+                                        <div class="mock-search"><i class="fa-solid fa-magnifying-glass"></i> Search services</div>
+                                        <div class="service-grid">
+                                            <span><i class="fa-solid fa-bolt"></i>Electrician</span>
+                                            <span><i class="fa-solid fa-faucet-drip"></i>Plumber</span>
+                                            <span><i class="fa-solid fa-hammer"></i>Carpenter</span>
+                                            <span><i class="fa-solid fa-paint-roller"></i>Painter</span>
+                                        </div>
+                                        <div class="mock-booking"><span>Nearby professional</span><b>Book now</b></div>
+                                    </div>
                                 </div>
-                                <h5 class="card-title mx-2">More Projects</h5>
-                                <p class="card-text mx-5">
-                                    Explore my collection of mini projects, practice apps,
-                                    and experimental work on GitHub.
-                                </p>
-                                <span class="mini-project-link mx-3">
-                                    View on GitHub →
-                                </span>
+                                <div class="visual-note note-one">Fast booking</div>
+                                <div class="visual-note note-two">Verified experts</div>
                             </div>
-                        </div>
+                            <div class="card-body d-flex flex-column">
+                                <p class="project-type">Mobile + web application</p>
+                                <h3 class="card-title">QuickFix</h3>
+                                <p class="project-subtitle">The Repairman Finder Application</p>
+                                <p class="card-text flex-grow-1">
+                                    A service marketplace connecting users with trusted professionals for fast home
+                                    repairs and maintenance.
+                                </p>
+                                <div class="project-tags"><span>Flutter</span><span>Node.js</span><span>Firebase</span></div>
+                                <div class="project-links">
+                                    <a href="https://quickfix.riyanlobo.in" target="_blank" rel="noopener noreferrer">
+                                        Live demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                    <a href="https://github.com/riyan60/FinalYearProject-QuickFix" target="_blank" rel="noopener noreferrer">
+                                        Source code <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 fade-in-scale" style="transition-delay: .1s">
+                        <article class="card h-100 project-card">
+                            <div class="project-visual project-visual-health">
+                                <span class="project-number">02</span>
+                                <span class="project-status">Web application</span>
+                                <div class="app-mockup dashboard-mockup" aria-hidden="true">
+                                    <div class="dash-sidebar">
+                                        <b>H+</b><i></i><i></i><i></i><i></i>
+                                    </div>
+                                    <div class="dash-main">
+                                        <div class="dash-head"><span><b>Good morning</b><small>Health overview</small></span><i></i></div>
+                                        <div class="dash-cards"><span><small>Patients</small><b>248</b></span><span><small>Today</small><b>12</b></span></div>
+                                        <div class="dash-chart"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                                        <div class="dash-list"><span></span><span></span><span></span></div>
+                                    </div>
+                                </div>
+                                <div class="visual-note note-three">Patient records</div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <p class="project-type">Healthcare management</p>
+                                <h3 class="card-title">HealthConnect</h3>
+                                <p class="project-subtitle">Doctor–Patient Management System</p>
+                                <p class="card-text flex-grow-1">
+                                    A streamlined system for managing patients, appointments, and medical records in
+                                    one accessible place.
+                                </p>
+                                <div class="project-tags"><span>JavaScript</span><span>PHP</span><span>MySQL</span></div>
+                                <div class="project-links">
+                                    <a href="https://projects.riyanlobo.in/healthconnect" target="_blank" rel="noopener noreferrer">
+                                        Case study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                    <a href="https://github.com/riyan60/HealthConnect-PatientDoctorManagementSystem" target="_blank" rel="noopener noreferrer">
+                                        Source code <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 fade-in-scale">
+                        <a href="https://github.com/riyan60?tab=repositories" target="_blank" rel="noopener noreferrer">
+                            <div class="card mini-project-card">
+                                <div class="card-body">
+                                    <div class="mini-icon"><i class="fas fa-cube"></i></div>
+                                    <div>
+                                        <p class="project-type">The playground</p>
+                                        <h3 class="card-title">More experiments & mini projects</h3>
+                                        <p class="card-text">Practice apps, small tools, and ideas I’m exploring on GitHub.</p>
+                                    </div>
+                                    <span class="mini-project-link">
+                                        Browse the collection <i class="fa-solid fa-arrow-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="process-section">
+            <div class="container">
+                <div class="row align-items-end g-4 process-intro">
+                    <div class="col-lg-7 fade-in-up">
+                        <p class="section-kicker">How I work</p>
+                        <h2 class="section-title">From messy idea to working product.</h2>
+                    </div>
+                    <div class="col-lg-5 fade-in-up">
+                        <p class="process-copy">A simple, collaborative process that keeps the product useful and the code maintainable.</p>
+                    </div>
+                </div>
+                <div class="process-grid">
+                    <article class="process-card fade-in-up">
+                        <span>01</span>
+                        <div class="process-icon"><i class="fa-regular fa-comments"></i></div>
+                        <h3>Understand</h3>
+                        <p>Clarify the problem, users, priorities, and what success should look like.</p>
+                    </article>
+                    <article class="process-card fade-in-up" style="transition-delay: .08s">
+                        <span>02</span>
+                        <div class="process-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <h3>Shape</h3>
+                        <p>Turn requirements into a clear structure, visual direction, and practical plan.</p>
+                    </article>
+                    <article class="process-card fade-in-up" style="transition-delay: .16s">
+                        <span>03</span>
+                        <div class="process-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Build</h3>
+                        <p>Develop responsively, test carefully, and refine the details that users notice.</p>
+                    </article>
+                    <article class="process-card fade-in-up" style="transition-delay: .24s">
+                        <span>04</span>
+                        <div class="process-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h3>Ship</h3>
+                        <p>Launch a polished result and keep improving it through real-world feedback.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-panel fade-in-up">
+                    <p class="section-kicker">Have a project in mind?</p>
+                    <h2 class="section-title">Let’s build something useful.</h2>
+                    <p class="contact-copy">I’m open to freelance work, collaborations, and full-time opportunities.</p>
+                    <a href="mailto:work.riyan6@gmail.com" class="contact-email">
+                        work.riyan6@gmail.com <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== Testimonials Section ===== -->
-    <!-- <section id="testimonials" class="py-5 testimonials-section">
-        <div class="container">
-            <h2 class="text-center mb-5 name section-title">What People Say</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4 mb-4 fade-in-scale">
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars mb-3">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="testimonial-text mb-3">
-                            "Professional developer with excellent attention to detail. Delivered the project on time
-                            with great communication."
-                        </p>
-                        <div class="testimonial-author">
-                            <p class="mb-0 fw-600">Client A</p>
-                            <p class="text-muted small mb-0">Web Development Project</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mb-4 fade-in-scale" style="animation-delay: 0.1s;">
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars mb-3">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="testimonial-text mb-3">
-                            "Great communication and problem-solving skills. The website is fast, responsive, and looks
-                            amazing on all devices."
-                        </p>
-                        <div class="testimonial-author">
-                            <p class="mb-0 fw-600">Client B</p>
-                            <p class="text-muted small mb-0">E-commerce Platform</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4 mb-4 fade-in-scale" style="animation-delay: 0.2s;">
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars mb-3">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <p class="testimonial-text mb-3">
-                            "Highly skilled and very responsive to feedback. Transformed our vision into a fully
-                            functional web application."
-                        </p>
-                        <div class="testimonial-author">
-                            <p class="mb-0 fw-600">Client C</p>
-                            <p class="text-muted small mb-0">Custom Web App</p>
-                        </div>
+                    <div class="contact-icons d-flex gap-3 flex-wrap">
+                        <a href="https://linkedin.com/in/riyan60" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/riyan60" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <i class="fa-brands fa-github"></i><span>GitHub</span>
+                        </a>
+                        <a href="https://instagram.com/x_riyan.7_x" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <i class="fa-brands fa-instagram"></i><span>Instagram</span>
+                        </a>
+                        <a href="https://wa.me/918007194157" target="_blank" rel="noopener noreferrer" class="contact-link">
+                            <i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section> -->
+        </section>
+    </main>
 
-    <!-- ===== Contact Section ===== -->
-    <section id="contact" class="py-5 contact-section">
+    <footer>
         <div class="container">
-            <h2 class="text-center mb-2 name section-title">Contact</h2>
-            <p class="text-center mb-5 fade-in-up">
-                Feel free to reach out to me through any of the platforms below
-            </p>
-
-            <div class="contact-icons d-flex justify-content-center gap-4 flex-wrap" style="animation-delay: 0.2s;">
-
-                <a href="tel:+918007194157" class="contact-link" aria-label="Call">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>Call</span>
-                </a>
-
-                <a href="mailto:work.riyan6@gmail.com" class="contact-link" aria-label="Email">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>Email</span>
-                </a>
-
-                <a href="https://linkedin.com/in/riyan60" target="_blank" class="contact-link" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <span>LinkedIn</span>
-                </a>
-
-                <a href="https://github.com/riyan60" target="_blank" class="contact-link" aria-label="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-
-                <a href="https://instagram.com/x_riyan.7_x" target="_blank" class="contact-link" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                    <span>Instagram</span>
-                </a>
-                <a href="https://wa.me/8007194157" target="_blank" class="contact-link" aria-label="WhatsApp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <span>WhatsApp</span>
-                </a>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== Footer ===== -->
-    <footer class="bg-dark text-center py-4">
-        <div class="container">
-            <p class="mb-2 text-white">Designed & Developed by Riyan Lobo</p>
-            <p class="mb-2 text-white">© 2025 Riyan Lobo. All Rights Reserved.</p>
+            <a class="footer-brand" href="#home"><span><img src="logo.webp" alt=""></span> Riyan Lobo</a>
+            <p>Designed and developed by Riyan.</p>
+            <p>© <span id="currentYear">2026</span> Riyan Lobo</p>
         </div>
     </footer>
 
-    <!-- ===== Back to Top Button ===== -->
-    <button id="backToTop" class="back-to-top" title="Go to top">
+    <button id="backToTop" class="back-to-top" title="Go to top" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

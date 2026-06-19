@@ -1,63 +1,13 @@
-// ===== Navbar Active Link Highlight =====
-const navLinks1 = document.querySelectorAll(".nav-link");
-
-navLinks1.forEach(link => {
-    link.addEventListener("click", () => {
-        navLinks1.forEach(l => l.classList.remove("active"));
-        link.classList.add("active");
-    });
-});
-
 // Auto close navbar on link click (mobile)
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
 const navbarCollapse = document.querySelector('.navbar-collapse');
 
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
-        if (navbarCollapse.classList.contains('show')) {
+        if (navbarCollapse && navbarCollapse.classList.contains('show')) {
             new bootstrap.Collapse(navbarCollapse).hide();
         }
     });
-});
-
-// ===== Stats Counter Animation =====
-
-const counters = document.querySelectorAll('.stat-number');
-let statsStarted = false;
-
-function startCounters() {
-    counters.forEach(counter => {
-        const target = +counter.getAttribute('data-target');
-        let count = 0;
-        const speed = 200;
-
-        const updateCount = () => {
-            const increment = target / speed;
-
-            if (count < target) {
-                count += increment;
-                counter.innerText = Math.ceil(count);
-                setTimeout(updateCount, 15);
-            } else {
-                counter.innerText = target + "+";
-            }
-        };
-
-        updateCount();
-    });
-}
-
-// Trigger when section is visible
-window.addEventListener('scroll', () => {
-    const statsSection = document.getElementById('stats');
-    if (statsSection) {
-        const sectionTop = statsSection.getBoundingClientRect().top;
-
-        if (sectionTop < window.innerHeight && !statsStarted) {
-            startCounters();
-            statsStarted = true;
-        }
-    }
 });
 
 // ===== Scroll Animation for Elements =====
@@ -69,7 +19,7 @@ const observerOptions = {
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
+            entry.target.classList.add('is-visible');
             observer.unobserve(entry.target);
         }
     });
@@ -80,18 +30,46 @@ document.querySelectorAll('.fade-in-up, .fade-in-scale').forEach(element => {
     observer.observe(element);
 });
 
+// Keep navigation in sync with the section currently in view
+const sections = document.querySelectorAll('main section[id]');
+const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+
+        navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+        });
+    });
+}, { rootMargin: '-35% 0px -55% 0px' });
+
+sections.forEach(section => sectionObserver.observe(section));
+
+const currentYear = document.getElementById('currentYear');
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+}
+
 // ===== Back to Top Button =====
 const backToTopButton = document.getElementById('backToTop');
+const scrollProgress = document.querySelector('.scroll-progress span');
 
-if (backToTopButton) {
-    window.addEventListener('scroll', () => {
+window.addEventListener('scroll', () => {
+    if (backToTopButton) {
         if (window.pageYOffset > 300) {
             backToTopButton.classList.add('show');
         } else {
             backToTopButton.classList.remove('show');
         }
-    });
+    }
 
+    if (scrollProgress) {
+        const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = scrollableHeight > 0 ? (window.scrollY / scrollableHeight) * 100 : 0;
+        scrollProgress.style.width = `${progress}%`;
+    }
+}, { passive: true });
+
+if (backToTopButton) {
     backToTopButton.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
